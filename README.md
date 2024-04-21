@@ -18,7 +18,7 @@ The Calorie Tracker App is a mobile application designed to help users monitor t
 
 ## Video 
 
-[![Video Demo](https://drive.google.com/file/d/17deJlIev2BKpa57_7_DsVf6LfmAuEkV_/view?usp=sharing)](https://drive.google.com/file/d/17deJlIev2BKpa57_7_DsVf6LfmAuEkV_/view?usp=sharing)
+[![Video Demo]](https://drive.google.com/file/d/17deJlIev2BKpa57_7_DsVf6LfmAuEkV_/view?usp=sharing)
 
 ## Usage
 
