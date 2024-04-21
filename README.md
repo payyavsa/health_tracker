@@ -16,6 +16,10 @@ The Calorie Tracker App is a mobile application designed to help users monitor t
 - **Profile Settings**: Customize your calorie goal to align with your fitness objectives. Set a target calorie intake that suits your lifestyle and dietary preferences, empowering you to make informed choices about your nutrition and health.
   ![Profile Settings](images/4.png)
 
+## Video 
+
+[![Video Demo](https://drive.google.com/file/d/17deJlIev2BKpa57_7_DsVf6LfmAuEkV_/view?usp=sharing)](https://drive.google.com/file/d/17deJlIev2BKpa57_7_DsVf6LfmAuEkV_/view?usp=sharing)
+
 ## Usage
 
 - Open the app and navigate through the Home page to access the different features: Nutrition Intake, Calorie Tracker, and Profile settings.
