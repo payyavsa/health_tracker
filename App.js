@@ -6,6 +6,7 @@ const App = () => {
   const [food, setFood] = useState('');
   const [calories, setCalories] = useState(0);
   const [totalCalories, setTotalCalories] = useState(0);
+  const [calorieGoal, setCalorieGoal] = useState(2000);
   const [intakeList, setIntakeList] = useState([]);
 
   const handleAddIntake = () => {
@@ -28,6 +29,9 @@ const App = () => {
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => setCurrentPage('calorieTracker')}>
             <Text style={styles.buttonText}>Calorie Tracker</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => setCurrentPage('profile')}>
+            <Text style={styles.buttonText}>Profile</Text>
           </TouchableOpacity>
         </View>
       )}
@@ -63,7 +67,9 @@ const App = () => {
             <Text style={styles.buttonText}>Back</Text>
           </TouchableOpacity>
           <Text style={styles.heading}>Calorie Tracker</Text>
+          <Text>Goal: {calorieGoal} calories</Text>
           <Text>Total Calories: {totalCalories}</Text>
+          <Text>Remaining Calories: {calorieGoal - totalCalories}</Text>
           <FlatList
             data={intakeList}
             keyExtractor={(item, index) => index.toString()}
@@ -73,6 +79,25 @@ const App = () => {
               </View>
             )}
           />
+        </View>
+      )}
+
+      {currentPage === 'profile' && (
+        <View>
+          <TouchableOpacity style={styles.backButton} onPress={() => setCurrentPage('home')}>
+            <Text style={styles.buttonText}>Back</Text>
+          </TouchableOpacity>
+          <Text style={styles.heading}>Profile</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter calorie goal"
+            value={calorieGoal.toString()}
+            onChangeText={text => setCalorieGoal(parseInt(text) || 0)}
+            keyboardType="numeric"
+          />
+          <TouchableOpacity style={styles.button} onPress={() => setCurrentPage('home')}>
+            <Text style={styles.buttonText}>Set Goal</Text>
+          </TouchableOpacity>
         </View>
       )}
     </View>
